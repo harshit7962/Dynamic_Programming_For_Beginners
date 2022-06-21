@@ -1,3 +1,6 @@
+int min(int a, int b, int c) {
+    return min(a, min(b,c));
+}
 int editDistanceDP(string s1, string s2) {
     int m=s1.size(), n=s2.size();
     vector<vector<int>> dp(m+1, vector<int>(n+1));
