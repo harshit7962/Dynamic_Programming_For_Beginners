@@ -20,6 +20,9 @@ int LongestIncreasingSubsequence(vector<int> arr) {
         res[i] = mx+1;
     }
     
+    /**
+    We return the largest value in our res array
+    */
     int ans=0;
     for(int i:res) ans=max(ans, i);
     
